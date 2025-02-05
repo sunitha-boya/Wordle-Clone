@@ -1,8 +1,48 @@
 # React + Vite
+# Wordle Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Wordle-like game built using React. The game allows users to guess a 5-letter word within 6 attempts. The feedback is color-coded to indicate whether the guessed letters are correct, misplaced, or incorrect.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Core Features:
+1. **Game Logic**:
+    - The user has 6 attempts to guess a 5-letter word.
+    - Color-coded feedback after each guess:
+        - **Green**: Correct letter in the correct position.
+        - **Yellow**: Correct letter in the wrong position.
+        - **Gray**: Incorrect letter.
+    - Prevents invalid words from being submitted.
+
+2. **UI/UX**:
+    - A grid displaying previous guesses with color-coded feedback.
+    - A message indicating if the user wins or loses.
+    - A "New Game" button to restart the game.
+
+3. **State Management**:
+    - Manages guessed words, remaining attempts, and game status.
+
+4. **Performance & Code Quality**:
+    - Clean, modular, and readable code.
+    - Proper component structure.
+
+### Bonus (Optional):
+- Animations for letter feedback.
+- Dark mode toggle.
+
+## Tech Stack
+- React/NextJS
+- CSS or TailwindCSS for styling
+- No backend (words are hardcoded)
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/wordle-clone.git
+2.Navigate to the project folder:
+- cd wordle-clone
+- 3.Install the dependencies:
+- npm install
+- 4.Start the development server:
+- npm start
